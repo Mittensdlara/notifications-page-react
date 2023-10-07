@@ -15,6 +15,7 @@ const data = [
     comment: "reacted to your recent post",
     commentOn: "My first tournament today!",
     time: "1m ago",
+    read: false
   },
   {
     id: 2,
@@ -24,6 +25,8 @@ const data = [
     comment: "followed you",
     commentOn: "",
     time: "5m ago",
+    read: false
+
   },
   {
     id: 3,
@@ -33,6 +36,8 @@ const data = [
     comment: "has joined your group",
     commentOn: "Chess Club",
     time: "1 day ago",
+    read: false
+
   },
   {
     id: 4,
@@ -45,6 +50,8 @@ const data = [
     message:
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     time: "5 days ago",
+    read: true
+
   },
   {
     id: 5,
@@ -54,6 +61,8 @@ const data = [
     comment: "commented on your picture",
     pictureNotif: chess,
     time: "1 week ago",
+    read: true
+
   },
   {
     id: 6,
@@ -63,6 +72,8 @@ const data = [
     comment: "reacted to your recent post",
     commentOn: "5 end-game strategies to increase your win rate",
     time: "2 weeks ago",
+    read: true
+
   },
 
   {
@@ -73,6 +84,7 @@ const data = [
     comment: "left the group",
     commentOn: "Chess Club",
     time: "2 weeks ago",
+    read: true
   },
 ];
 

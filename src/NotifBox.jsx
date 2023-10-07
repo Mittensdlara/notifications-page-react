@@ -8,7 +8,7 @@ const NotifBox = ({ readMessage }) => {
         {data.map((user) => (
           <li
             className={`m-1 p-3 rounded-xl ${
-              readMessage ? "bg-white" : "bg-VeryLightGrayishBlue"
+              user.read ? "bg-white" : "bg-VeryLightGrayishBlue"
             }`}
             key={user.id}
           >
@@ -17,10 +17,10 @@ const NotifBox = ({ readMessage }) => {
               {" "}
               {user.name}{" "}
             </h2>
-            <p className="text-sm inline">
-              {user.comment}
+            <p className="text-xs inline">
+              {user.comment} 
               <span className="font-bold ml-1 text-sm text-DarkGrayishBlue hover:text-GrayishBlue cursor-pointer">
-                {user.commentOn}
+                {user.commentOn} {user.read ? "" : "🔴"}
               </span>
               {user.pictureNotif && (
                 <img
